@@ -1,0 +1,110 @@
+.background {
+    background-color: rgb(31, 41, 54);
+    width: 215, 5vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    color: white;
+
+    .box-search {
+        width: 350px;
+        height: 50px;
+        background-color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        form {
+            width: 100%;
+            height: 100%;
+
+            .row {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: space-evenly;
+                align-content: center;
+                flex-wrap: wrap;
+
+                input {
+                    width: 80%;
+                    height: 70%;
+                    border-radius: 5px;
+                    border: none;
+                    border-bottom: 1px solid rgb(132, 132, 132);
+                    font-weight: bold;
+                }
+
+                button {
+                    border: none;
+                    background-color: white;
+
+                    .search-icon {
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-output {
+        display: flex;
+        background-color: white;
+        width: 350px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: #101e33;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        position: relative;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+
+        .city {
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .test {
+            text-align: center;
+            .sky-img {
+                width: 60%;
+                margin-bottom: 15px;
+            }
+        }
+
+        .sky {
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .temp {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .other {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 7px 10px 7px;
+            .hum {
+                font-size: 0.7rem;
+            }
+
+            .wind {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
